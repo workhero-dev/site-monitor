@@ -2,7 +2,7 @@ name: Hourly Site Monitor
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 9,21 * * *'
   workflow_dispatch:
 
 jobs:
