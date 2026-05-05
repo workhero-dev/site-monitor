@@ -99,7 +99,7 @@ REASON: (one sentence explaining your decision)
 Be conservative - only flag as SUSPICIOUS if there are clear signs of a problem."""
 
     payload = {
-        "model": "claude-sonnet-4-20250514",
+        "model": "claude-sonnet-4-6",
         "max_tokens": 150,
         "messages": [{"role": "user", "content": prompt}]
     }
