@@ -171,7 +171,7 @@ for site in sites:
     if site not in flagged_sites:
         page_text = strip_html(html_content)
         is_suspicious, reason = analyze_with_claude(site, page_text)
-        time.sleep(5)
+        time.sleep(10)
         if is_suspicious:
             ai_flagged_sites[site] = reason
             print(f"  AI FLAGGED: {site} - {reason}")
