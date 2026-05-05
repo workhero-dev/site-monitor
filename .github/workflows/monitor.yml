@@ -2,8 +2,8 @@ name: Hourly Site Monitor
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
-  workflow_dispatch:       # Allows manual run from GitHub
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   monitor:
@@ -24,4 +24,5 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python monitor.py
