@@ -7,6 +7,7 @@ import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
+import time
 
 # --- Config from environment variables ---
 SAFE_BROWSING_API_KEY = os.environ["SAFE_BROWSING_API_KEY"]
@@ -170,6 +171,7 @@ for site in sites:
     if site not in flagged_sites:
         page_text = strip_html(html_content)
         is_suspicious, reason = analyze_with_claude(site, page_text)
+        time.sleep(2)
         if is_suspicious:
             ai_flagged_sites[site] = reason
             print(f"  AI FLAGGED: {site} - {reason}")
