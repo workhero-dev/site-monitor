@@ -1,4 +1,4 @@
-name: Hourly Site Monitor
+name: Daily Site Monitor
 
 on:
   schedule:
