@@ -18,7 +18,7 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 # --- Load sites ---
 with open("sites.txt") as f:
-    sites = [line.strip() for line in f if line.strip()]
+    sites = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
 
 print(f"Checking {len(sites)} sites at {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
 
