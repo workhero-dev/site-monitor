@@ -55,27 +55,4 @@ https://wyapprenticeships.com/
 https://dws.wyo.gov/
 https://www.cheyenneregional.org/
 
-# IntelliBright Sites
-https://fluenceibstg.wpenginepowered.com/
-https://proximitylpstg.wpenginepowered.com/
-https://nelsonveinstg.wpenginepowered.com/
-https://procomstg.wpenginepowered.com/
-https://mdcincstg.wpenginepowered.com/
-https://prohomemistg.wpenginepowered.com/
-https://vipfibroidstg.wpenginepowered.com/
-https://topkeystg.wpenginepowered.com/
-https://smartcremstage.wpengine.com/
-https://vipveinstg.wpenginepowered.com/
-https://careerssmarstg.wpengine.com/
-https://merchantstage.wpengine.com/
-https://lpprohomestg.wpenginepowered.com/
-https://ibnewstg.wpenginepowered.com/
-https://kimmelinstistg.wpenginepowered.com/
-https://genserveibstg.wpenginepowered.com/
-https://phillysocstage.wpengine.com/
-https://cardconnectstg.wpenginepowered.com/
-https://ameriplanstage.wpengine.com/
-https://alfuneralstage.wpengine.com/
-https://accucarstaging.wpengine.com/
-https://proxasyncstg.wpenginepowered.com/
-https://aaastage.wpengine.com/
+
