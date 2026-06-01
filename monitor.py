@@ -167,8 +167,9 @@ for site in sites:
         print(f"  DOWN: {site} - {error}")
         continue
 
-    # Layer 3: Claude AI content analysis (only if site is up and not already blacklisted)
-    if site not in flagged_sites:
+    # Layer 3: Claude AI content analysis (only runs at 9AM and 9PM UTC)
+    current_hour = datetime.utcnow().hour
+    if current_hour in [9, 21] and site not in flagged_sites:
         page_text = strip_html(html_content)
         is_suspicious, reason = analyze_with_claude(site, page_text)
         time.sleep(10)
